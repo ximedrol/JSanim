@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="ru-RU">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<script src="js/jquery.js"></script><!-- подключаю библиотеку JQuery -->
+<script src="js/jquery-swapsies.js"></script><!-- подключаю скрипт обмена элементов -->
+<script src="js/sorting.js"></script><!-- подключаю скрипт сортировки -->
+<link rel="stylesheet" href="css/style.css" type="text/css" /><!-- подключаю стили -->
+<title>Анимированная сортировка методом пузырька на JavaScript</title>
+</head>
+<body>
+	<div >
+		<p class="button randomGenerate">Сгенерировать набор данных</p><!-- кнопка для генерации набора данных  -->
+		<button class="button sorting" disabled>Начать процесс сортировки</button><!-- кнопка для запуска процесса сортировки чисел -->
+		<p class="button reset">Сброс</button><!-- кнопка сброса окна в исходное состояние  -->
+		<div id="instructions"><!-- инструкция -->
+			<p>Инструкция:</p>
+			<p>Лепрекон по имени Тимми просит Вас ему помочь с сортировкой горшков с золотом.</p>
+			<p>Чтобы появились горшки с золотом нажмите на 'Сгенерировать набор данных'.</p>
+			<p>Для их сортировки нажмите на 'Начать процесс сортировки'.</p>
+			<p>Внизу находится табличка с информацией о процессе сортировки.</p>
+			<p>Если потребуется очистить данные, то нажмите на кнопку 'Сброс'.</p>
+		</div>
+		<div id="genNumbers"></div><!-- сгенерированные числа -->
+		<div id="info"><!-- информация о процессе сортировки -->
+			<span class="result"></span><br><!-- здесь будет вывод сообщения о завершении сортировки -->
+			<span class="currentEntry"></span><br><!-- вывод текущего прохода -->
+			Данные до сортировки: <span class="original_numbers"></span><br>
+			Данные после сортировки: <span class="sorted_numbers"></span>
+		</div>
+	</div>
+</body>
+</html>
